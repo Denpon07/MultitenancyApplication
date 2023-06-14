@@ -1,5 +1,6 @@
 package ua.shevchenko.multitenantapplication.datasource.models;
 
+import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.boot.jdbc.DataSourceBuilder;
 import org.springframework.stereotype.Component;
 
@@ -10,7 +11,7 @@ import java.util.Map;
 
 
 @Component
-//@ConfigurationProperties(prefix = "tenants")
+@ConfigurationProperties(prefix = "tenants")
 public class DataSourceProperties {
     private final Map<Object, Object> dataSources = new LinkedHashMap<>();
 

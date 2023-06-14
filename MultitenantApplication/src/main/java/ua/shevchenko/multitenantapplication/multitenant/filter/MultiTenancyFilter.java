@@ -26,5 +26,4 @@ public class MultiTenancyFilter extends OncePerRequestFilter {
         filterChain.doFilter(request, response);
     }
 
-
 }
